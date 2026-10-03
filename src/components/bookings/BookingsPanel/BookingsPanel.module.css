@@ -1,0 +1,112 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-xl);
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: var(--text-title-large-size);
+  color: var(--color-on-surface);
+}
+
+.subtitle {
+  margin-block: var(--space-xs) 0;
+  margin-inline: 0;
+  font-size: var(--text-body-medium-size);
+  color: var(--color-on-surface-variant);
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.refresh,
+.dismiss {
+  font: inherit;
+  font-size: var(--text-label-large-size);
+  font-weight: 600;
+  padding-block: var(--space-sm);
+  padding-inline: var(--space-lg);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-outline); /* hairline */
+  background: var(--color-surface);
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.refresh:hover:not(:disabled),
+.dismiss:hover {
+  background: var(--color-surface-hover);
+}
+
+.refresh:disabled {
+  opacity: 0.55;
+  cursor: progress;
+}
+
+.refresh:focus-visible,
+.dismiss:focus-visible {
+  outline: 2px solid var(--color-focus); /* focus ring width */
+  outline-offset: 2px;
+}
+
+.feedbackSlot:empty {
+  display: none;
+}
+
+.feedback {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-lg);
+  margin: 0;
+  padding-block: var(--space-lg);
+  padding-inline: var(--space-xl);
+  border-radius: var(--radius-md);
+  font-size: var(--text-body-medium-size);
+  border-inline-start: 4px solid currentColor; /* accent bar */
+}
+
+.success {
+  background: var(--color-success-container);
+  color: var(--color-on-success-container);
+}
+
+.error {
+  background: var(--color-error-container);
+  color: var(--color-on-error-container);
+}
+
+.errorText {
+  margin: 0;
+}
+
+.state {
+  margin: 0;
+  padding-block: var(--space-xxxl);
+  text-align: center;
+  color: var(--color-on-surface-variant);
+  background: var(--color-surface);
+  border: 1px dashed var(--color-outline-variant); /* hairline */
+  border-radius: var(--radius-md);
+}
+
+.count {
+  margin: 0;
+  font-size: var(--text-body-small-size);
+  color: var(--color-on-surface-variant);
+}
