@@ -1,0 +1,36 @@
+.badge {
+  display: inline-block;
+  padding-block: var(--space-xxs);
+  padding-inline: var(--space-md);
+  border-radius: var(--radius-full);
+  font-size: var(--text-label-medium-size);
+  font-weight: 600;
+  white-space: nowrap;
+  border: 1px solid transparent; /* hairline: below the spacing scale */
+}
+
+.pending {
+  background: var(--color-warning-container);
+  color: var(--color-on-warning-container);
+}
+
+.approved {
+  background: var(--color-success-container);
+  color: var(--color-on-success-container);
+}
+
+.rejected {
+  background: var(--color-error-container);
+  color: var(--color-on-error-container);
+}
+
+.cancelled {
+  background: var(--color-surface-container);
+  color: var(--color-on-surface-variant);
+  border-color: var(--color-outline-variant);
+}
+
+.paid {
+  background: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+}

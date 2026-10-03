@@ -1,0 +1,123 @@
+.scroller {
+  overflow-x: auto;
+  border: 1px solid var(--color-outline-variant); /* hairline */
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+}
+
+.table {
+  inline-size: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-body-medium-size);
+}
+
+.caption {
+  text-align: start;
+}
+
+.table th,
+.table td {
+  padding-block: var(--space-lg);
+  padding-inline: var(--space-xl);
+  text-align: start;
+  vertical-align: middle;
+  border-block-end: 1px solid var(--color-outline-variant); /* hairline */
+}
+
+.table thead th {
+  background: var(--color-surface-container);
+  color: var(--color-on-surface-variant);
+  font-size: var(--text-label-medium-size);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.table tbody tr:last-child th,
+.table tbody tr:last-child td {
+  border-block-end: none;
+}
+
+.table tbody tr:hover {
+  background: var(--color-surface-hover);
+}
+
+.venue {
+  font-weight: 600;
+  color: var(--color-on-surface);
+}
+
+.numeric {
+  text-align: end;
+  font-variant-numeric: tabular-nums;
+}
+
+.table .numeric {
+  text-align: end;
+}
+
+.nowrap {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.email {
+  overflow-wrap: anywhere;
+  color: var(--color-on-surface-variant);
+}
+
+.actions {
+  white-space: nowrap;
+}
+
+.button {
+  font: inherit;
+  font-size: var(--text-label-large-size);
+  font-weight: 600;
+  padding-block: var(--space-sm);
+  padding-inline: var(--space-lg);
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent; /* hairline */
+  cursor: pointer;
+  transition: background-color 120ms ease, opacity 120ms ease;
+}
+
+.button + .button {
+  margin-inline-start: var(--space-md);
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--color-focus); /* focus ring width */
+  outline-offset: 2px;
+}
+
+.button:disabled {
+  opacity: 0.55;
+  cursor: progress;
+}
+
+.approve {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+.approve:hover:not(:disabled) {
+  background: var(--color-primary-hover);
+}
+
+.reject {
+  background: var(--color-surface);
+  color: var(--color-error);
+  border-color: var(--color-error);
+}
+
+.reject:hover:not(:disabled) {
+  background: var(--color-error-container);
+}
+
+.saving {
+  margin-inline-start: var(--space-md);
+  font-size: var(--text-label-medium-size);
+  color: var(--color-on-surface-variant);
+}

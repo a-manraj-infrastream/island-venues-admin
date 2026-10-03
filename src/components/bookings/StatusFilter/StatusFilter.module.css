@@ -1,0 +1,29 @@
+.filter {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.label {
+  font-size: var(--text-label-large-size);
+  font-weight: 600;
+  color: var(--color-on-surface-variant);
+}
+
+.select {
+  font: inherit;
+  font-size: var(--text-body-medium-size);
+  padding-block: var(--space-sm);
+  padding-inline: var(--space-lg);
+  border: 1px solid var(--color-outline); /* hairline */
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  color: var(--color-on-surface);
+  min-inline-size: 12rem;
+}
+
+.select:focus-visible {
+  outline: 2px solid var(--color-focus); /* focus ring width */
+  outline-offset: 2px;
+}
